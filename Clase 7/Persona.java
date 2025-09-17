@@ -33,4 +33,5 @@ public class Persona{
         return "Usted esta estudiando: " + carrera;
     }
 
+    //Tarea Consultar sobre el metodo toString
 }
