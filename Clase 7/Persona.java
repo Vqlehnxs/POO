@@ -20,9 +20,17 @@ public class Persona{
         this.peso = peso;
     }
     //Metodos
-    public void caminar(){}
-    public boolean jugar(){}
-    public void comer(){}
-    public String estudiar(){}
+    public void caminar(){
+        System.out.println("Caminar");
+    }
+    public boolean jugar(){
+        return true;
+    }
+    public void comer(){
+        System.out.println("Comiendo");
+    }
+    public String estudiar(String carrera){
+        return "Usted esta estudiando: " + carrera;
+    }
 
 }
