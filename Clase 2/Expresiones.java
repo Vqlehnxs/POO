@@ -17,6 +17,11 @@ public class Expresiones {
         int B = 5;
         int C = 1;
 
+        if (A = B){
+            System.out.println("No se puede dividir por 0");
+        }
+        else
+
         System.out.println(B * A - Math.pow(5, 2)/ 4 * C);
         System.out.println((A * B) / Math.pow(3, 2));
         System.out.println( (((B + C) / 2 * A + 10) * 3 * B) - 6);
