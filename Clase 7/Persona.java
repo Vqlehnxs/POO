@@ -32,6 +32,12 @@ public class Persona{
     public String estudiar(String carrera){
         return "Usted esta estudiando: " + carrera;
     }
+    @Override
+    public String toString() {
+        return "El nombre es: " + nombres + ", Su apellido es: " + apellido + ", Su edad: " + edad + ", Su altura: " + altura +
+        ", su peso es: " + peso;
+    }
 
     //Tarea Consultar sobre el metodo toString
+    // Hecho
 }

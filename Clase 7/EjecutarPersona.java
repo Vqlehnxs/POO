@@ -8,6 +8,8 @@ public class EjecutarPersona {
         Persona objPersona2;
         objPersona2 = new Persona(1234435, "Rikishi", "Castillo", 25, 1.76, 87);
         System.out.println(objPersona2.estudiar("Ingenieria en Sistemas"));
+        System.out.println(objPersona1.toString());
+        System.out.println(objPersona2.toString());
         //Implementar los metodos get  y set en la clase persona
         //dichos metodos utilizarlos en la clase EjecutarPersona
     }
