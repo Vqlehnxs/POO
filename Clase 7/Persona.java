@@ -19,6 +19,45 @@ public class Persona{
         this.altura = estatura;
         this.peso = peso;
     }
+    //Metodos get y set
+    public int getIndentificacion() {
+        return indentificacion;
+    }
+    public void setIndentificacion(int indentificacion) {
+        this.indentificacion = indentificacion;
+    }
+    public String getNombres() {
+        return nombres;
+    }
+    public void setNombres(String nombres) {
+        this.nombres = nombres;
+    }
+    public String getApellido() {
+        return apellido;
+    }
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+    public int getEdad() {
+        return edad;
+    }
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+    public double getAltura() {
+        return altura;
+    }
+    public void setAltura(double altura) {
+        this.altura = altura;
+    }
+    public double getPeso() {
+        return peso;
+    }
+    public void setPeso(double peso) {
+        this.peso = peso;
+    }
+
+
     //Metodos
     public void caminar(){
         System.out.println("Caminar");

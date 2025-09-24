@@ -10,7 +10,9 @@ public class EjecutarPersona {
         System.out.println(objPersona2.estudiar("Ingenieria en Sistemas"));
         System.out.println(objPersona1.toString());
         System.out.println(objPersona2.toString());
+        System.out.println("La edad de la persona 1 es: " + objPersona1.getEdad());
         //Implementar los metodos get  y set en la clase persona
         //dichos metodos utilizarlos en la clase EjecutarPersona
+        //Hecho
     }
 }
