@@ -65,6 +65,7 @@ public class EjecutarOpeMat {
         } else{
             System.out.println("Error no digito ninguna opcion");
         }
+        sc.close();
 
         /*Scanner sc = new Scanner(System.in);
         System.out.print("Digite el primer numero...");
