@@ -42,4 +42,16 @@ public class OperacionesMatematicas {
         }
         return resultado;
     }
+    
+    public double elevarCuadrado(){
+        return Math.pow(n1, 2);
+    }
+    
+    public double elevarCubo(){
+        return Math.pow(n1, 3);
+    }
+
+    public double elevarN(){
+        return Math.pow(n1, n2);
+    }
 }
