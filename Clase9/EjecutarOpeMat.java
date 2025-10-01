@@ -8,6 +8,7 @@ public class EjecutarOpeMat {
         int a = sc.nextInt();
         System.out.print("Digite el segundo numero...");
         int b = sc.nextInt();
+        sc.close();
         /*Para leer enteros: nextInt() o nextLong()
          * Para leer reales: nextDouble() o nextFloat()
          * Para leer cadenas: next() o nextLine()
@@ -21,6 +22,9 @@ public class EjecutarOpeMat {
         System.out.println("El resultado de la multiplicar es: " + objOp.multiplicar());
         System.out.println("El resultado de la dividir es: " + objOp.dividir());
         
+        /*Tarea implementar los metodos elevar al cuadrado, al cubo, a la n, sacar raiz cuadrada, raiz cubica y sacar la raiz 
+        *n. todo lo anterior con un menu
+        */
     }
     
 }
