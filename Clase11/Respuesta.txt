@@ -23,3 +23,29 @@ R//: Falso, los setter deben validar el dato que recibe, ya que el setter impide
 
 **Parte 2**
 
+Atributos
+-----------------------------------------------------------------------------------------------
+Nombre          Tipo de dato           Visibilidad                      Descripcion
+-----------------------------------------------------------------------------------------------
+titular            String               privado             Nombre del propietario de la cuenta
+numeroCuenta       String               privado             Numero que identifica la cuenta
+saldo              double               privado             Cantidad de dinero de la cuenta
+
+Metodo
+-------------------------------------------------------------------------------------------------------------------------------------------------
+Nombre             Parametros                                               Retorno                   Descripcion
+-------------------------------------------------------------------------------------------------------------------------------------------------
+CuentaBancaria                          -                                   -                         Constructor
+CuentaBancaria    String titular, string numeroCuenta, double saldo         -                         Constructor 
+depositar         double monto                                              void                      Aumenta el saldo si el monto > 0
+retirar           double monto                                              void                      Descuenta si hay saldo suficiente
+toString          -                                                         String                    Muestra la informacion basica de la cuenta
+getTitular        -                                                         String                    Devuelve el nombre del titular
+setTitular        String titular                                            void                      Establece el nombre del titular
+getNumeroCuenta   -                                                         String                    Devuelve el numero de identificacion de la cuenta
+setNumeroCuenta   String numeroCuenta                                       void                      Establece el numero de identificacion de la cuenta
+getSaldo          -                                                         double                    Devuelve el saldo actual de la cuenta
+
+
+
+
