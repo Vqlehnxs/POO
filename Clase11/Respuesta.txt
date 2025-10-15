@@ -46,6 +46,15 @@ getNumeroCuenta   -                                                         Stri
 setNumeroCuenta   String numeroCuenta                                       void                      Establece el numero de identificacion de la cuenta
 getSaldo          -                                                         double                    Devuelve el saldo actual de la cuenta
 
+Predeccir posibles resultados
 
+Si ambas cuentas estan bien, el resultado sera el siguiente
+{ Titular: Alexis Hernandez, Numero de Cuenta: A1257, Saldo: $150000.0 }
+Despues de depositar 50000, el saldo es: 200000.0
+Despues de retirar 20000, el saldo es: 180000.0
+
+Si hay algun error, idependiente de cual sea la cuenta
+
+Mencionare el tipo de error y detendra el codigo.
 
 
