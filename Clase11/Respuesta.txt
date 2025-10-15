@@ -1,0 +1,25 @@
+Respuetas del examen parcial - Programacion orientada a objetos
+Nombre: Yesid Stiven Balanta Escamilla
+
+**Parte 1**
+1) ¿Qué es la encapsulación y por qué es importante en la Programación Orientada a Objetos?
+R//: La encapsulación por nombrar de alguna manera, consta de la agrupacion tanto de los datos y de las funciones que operan con estos datos.
+Ademas, es importante gracias a que con la encapsulación se encarga de proteger y restrigir el acesso externo al estado de estos datos de manera interna.
+
+2) ¿Qué diferencia hay entre un método y un constructor?
+R//:De manera sencilla, una de las diferencia que se podria decir "principal", es que el método debe de tener algun tipo de retorno, en cambio
+un constructor es el que inicializa el objeto.
+
+3)¿Por qué los atributos deben ser privados y no públicos?
+R//: Ya que los atributos se usan, como verlo de otra manera, el esqueleto de nuestro codigo, ademas de que al ser privados, ayuda de que no se
+modifiquen por error y tal vez romper esa coherencia dentro del mismo.
+
+4)¿Qué función cumplen los getters y setters?
+R//: Los getters ayudan a tomar especificamente un atributo y monstrar su contenido, sin necesidad de mostar los demas. En cambio los setters ayudan
+a modificar un contenido de un atributo (Validando el tipo de dato que recibe) y cambiarlo.
+
+5) Verdadero o falso: “Un método setter no debe validar los datos que recibe.” Justifique.
+R//: Falso, los setter deben validar el dato que recibe, ya que el setter impide que el dato se vuelva invalido.
+
+**Parte 2**
+
