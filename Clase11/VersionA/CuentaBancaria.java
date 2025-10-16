@@ -20,7 +20,7 @@ public class CuentaBancaria {
             throw new IllegalArgumentException("El titular no puede estar vacío");
         }
         if (numeroCuenta == null || numeroCuenta.length() < 5) {
-            throw new IllegalArgumentException("El número de cuenta debe tener al menos 5 dígitos");
+            throw new IllegalArgumentException("El número de cuenta debe tener 5 dígitos");
         }
         if (saldo < 0) {
             throw new IllegalArgumentException("El saldo no puede ser menor a 0");
