@@ -1,5 +1,3 @@
-package Clase12.Ejemplo1;
-
 public class Animal {
 
     public void hacerSonido(){
