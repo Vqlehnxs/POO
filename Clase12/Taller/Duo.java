@@ -1,10 +1,10 @@
 public class Duo extends Menu{
 
-    private int sandwhich;
+    private int sandwich;
 
-    public Duo(String combo, int sandwhich) {
+    public Duo(String combo, int sandwich) {
         super(combo);
-        this.sandwhich = sandwhich;
+        this.sandwich = sandwich;
     }
 
     @Override
@@ -14,6 +14,6 @@ public class Duo extends Menu{
 
     @Override
     public String info(){
-        return " Esta pidiendo un " + combo + " (" + sandwhich + " Sandwhich deluxe) con un precio de " + precio + " Pesos colombianos. Con un descuento del 25%! ";
+        return " Esta pidiendo un " + combo + " (" + sandwich + " Sandwich deluxe) con un precio de " + precio + " Pesos colombianos. Con un descuento del 25%! ";
     }
 }

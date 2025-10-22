@@ -13,6 +13,6 @@ public class Menu {
     }
 
     public String info(){
-        return " Esta pidiendo un " + combo + " con un precio de " + precio + " Con un descuento del 10%! ";
+        return " Esta pidiendo un " + combo + " con un precio de " + precio + " Con un descuento del xx%! ";
     }
 }
