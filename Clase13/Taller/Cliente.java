@@ -8,7 +8,23 @@ public class Cliente {
         this.nombre = nombre;
     }
 
-    public String toString(){
+    public int getCedula() {
+        return cedula;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+    
+    public void setCedula(int cedula) {
+        this.cedula = cedula;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String toString() {
         return "{ Nombre del cliente: " + nombre + ", Cedula: " + cedula + " }";
     }
 }
