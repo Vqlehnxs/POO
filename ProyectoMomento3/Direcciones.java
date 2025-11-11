@@ -1,6 +1,5 @@
-public class Direcciones {
+
 /* Se hace la definiciones de las enumeraciones */
-    public enum Direccion{
+    public enum Direcciones{
         SUBIENDO, BAJANDO, DETENIDO
     }
-}

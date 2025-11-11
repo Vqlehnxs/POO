@@ -2,9 +2,9 @@ public class BotonPasillo extends Boton {
     
     private Direcciones direccion;
     private int numeroPiso;
-    private interfazElevador controlador;
+    private InterfazElevador controlador;
 
-    public BotonPasillo(String idBoton, int numeroPiso, Direcciones direccion, interfazElevador controlador){
+    public BotonPasillo(String idBoton, int numeroPiso, Direcciones direccion, InterfazElevador controlador){
         super(idBoton);
         this.numeroPiso = numeroPiso;
         this.direccion = direccion;

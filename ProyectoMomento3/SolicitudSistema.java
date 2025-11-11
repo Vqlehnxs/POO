@@ -2,9 +2,9 @@ public class SolicitudSistema {
     
     private int numeroPiso;
     private Direcciones direccion;
-    private TiposDeSolicitud tipo;
+    private TiposSolicitud tipo;
 
-    public SolicitudSistema(int numeroPiso, Direcciones direccion, TiposDeSolicitud tipo){
+    public SolicitudSistema(int numeroPiso, Direcciones direccion, TiposSolicitud tipo){
         this.numeroPiso = numeroPiso;
         this.direccion = direccion;
         this.tipo = tipo;
@@ -18,7 +18,7 @@ public class SolicitudSistema {
         return direccion;
     }
 
-    public TiposDeSolicitud getTipo(){
+    public TiposSolicitud getTipo(){
         return tipo;
     }
 }
