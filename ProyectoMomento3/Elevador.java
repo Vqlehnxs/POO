@@ -52,6 +52,13 @@ public class Elevador {
         if(!destinos.contains(piso)){
             destinos.add(piso);
             System.out.println("Destino agregado: piso " + piso);
+            System.out.println("   - Cerrando puertas...");
+            cerrarPuertas();
+
+            if(!enMovimiento){
+                procesarDestinos();
+            }
+
         }
     }
 
@@ -69,9 +76,27 @@ public class Elevador {
 
     public void llegarAPiso(){
         System.out.println("Elevador " + id + " llego al piso " + pisoActual);
+        System.out.println("   - Abriendo puertas...");
         abrirPuertas();
         resetIluminacionBoton(pisoActual);
         destinos.remove(pisoActual);
+
+        if(!destinos.isEmpty()){
+            System.out.println(" -Procesando siguiente destino...");
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e){
+                e.printStackTrace();
+            }
+            procesarDestinos();
+        }
+    }
+
+    public void procesarDestinos(){
+        if(!enMovimiento && !destinos.isEmpty()){
+            int siguienteDestino = destinos.peek();
+            moverAPiso(siguienteDestino);
+        }
     }
 
     private void resetIluminacionBoton(int piso){

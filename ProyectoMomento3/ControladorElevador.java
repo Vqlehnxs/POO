@@ -2,7 +2,7 @@ import java.util.*;
 import java.util.List;
 import java.util.ArrayList;
 
-public class ControladorElevador {
+public class ControladorElevador implements InterfazElevador {
     private List<Elevador> elevadores;
     private Queue<SolicitudSistema> solicitudesPendientes;
 
