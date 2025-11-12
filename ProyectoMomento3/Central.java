@@ -2,19 +2,19 @@ import java.util.*;
 
 public class Central {
 
-    private List<Elevador> elevadores;
-    private List<Piso> pisos;
+    private List<Elevador> elevadores; /*Lista de los elevadores */
+    private List<Piso> pisos; /*Lista de los pisos del edificio */
     private InterfazElevador controlador;
     private final int TOTAL_PISOS = 10; /* Al usar Final, una vez inicializada, no puede cambiarse su valor */
 
-    public Central() {
+    public Central() { /*Metodo constructor */
         this.controlador = new ControladorElevador();
         this.elevadores = new ArrayList<>();
         this.pisos = new ArrayList<>();
         inicializarSistema();
     }
 
-    private void inicializarSistema() {
+    private void inicializarSistema() { /*Inicia el sistema, crea los elevadores y los botones de llamda de cada piso del edificio */
         Elevador elevador1 = new Elevador("F1", TOTAL_PISOS);
         controlador.agregarElevador(elevador1);
         elevadores.add(elevador1);
@@ -26,7 +26,7 @@ public class Central {
         System.out.println("Sistema de elevador inicializado con " + TOTAL_PISOS + " pisos");
     }
 
-    public void simular(){
+    public void simular(){ /*Este es el simulador */
         System.out.println("\n--- SIMULACION INICIADA ---");
 
         System.out.println("\n--- Primer escenario: Una persona en el piso 6 presiona subir el elevador ---");

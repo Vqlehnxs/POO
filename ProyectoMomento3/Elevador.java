@@ -5,13 +5,13 @@ public class Elevador {
     private int pisoActual;
     private Direcciones direccionActual;
     private Puerta puerta;
-    private List<BotonAscensor> botones;
-    private Queue<Integer> destinos;
+    private List<BotonAscensor> botones; /*Creacion de las listas de los elevadores */
+    private Queue<Integer> destinos; /*Creacion de las listas de las solicitudes */
     private String id;
     private boolean enMovimiento;
     private int totalPisos;
 
-    public Elevador(String id, int totalPisos){
+    public Elevador(String id, int totalPisos){ /*Metodo constructor */
         this.id = id;
         this.totalPisos = totalPisos;
         this.pisoActual = 1;
@@ -23,7 +23,7 @@ public class Elevador {
         inicializarBotones();
     }
 
-    public void moverAPiso(int pisoDestino){
+    public void moverAPiso(int pisoDestino){ /*Metodo encargado del elevador moverse al piso solicitado */
         if(pisoDestino < 1 || pisoDestino > totalPisos){
             System.out.println("Piso invalido: " + pisoDestino);
             return;
@@ -48,7 +48,7 @@ public class Elevador {
         llegarAPiso();
     }
 
-    public void agregarDestino(int piso){
+    public void agregarDestino(int piso){ /*Metodo que agrega el destino del elevador */
         if(!destinos.contains(piso)){
             destinos.add(piso);
             System.out.println("Destino agregado: piso " + piso);
@@ -62,7 +62,7 @@ public class Elevador {
         }
     }
 
-    public void abrirPuertas(){
+    public void abrirPuertas(){ /*Metodo encargado de abrir las puertas */
         if(!enMovimiento){
             puerta.abrir();
         } else{
@@ -70,11 +70,11 @@ public class Elevador {
         }
     }
 
-    public void cerrarPuertas(){
+    public void cerrarPuertas(){ /*Metodo encargado de cerrar las puertas */
         puerta.cerrar();
     }
 
-    public void llegarAPiso(){
+    public void llegarAPiso(){ /*Metodo cuando el elevador llega al piso */
         System.out.println("Elevador " + id + " llego al piso " + pisoActual);
         System.out.println("   - Abriendo puertas...");
         abrirPuertas();
@@ -92,14 +92,14 @@ public class Elevador {
         }
     }
 
-    public void procesarDestinos(){
+    public void procesarDestinos(){ /*Metodo encargado de procesar la solicitud de destino del elevador */
         if(!enMovimiento && !destinos.isEmpty()){
             int siguienteDestino = destinos.peek();
             moverAPiso(siguienteDestino);
         }
     }
 
-    private void resetIluminacionBoton(int piso){
+    private void resetIluminacionBoton(int piso){ /*Metodo que resetea la iluminacion del boton */
         for(BotonAscensor boton : botones){
             if(boton.getPisoDestino() == piso){
                 boton.reset();
@@ -107,7 +107,7 @@ public class Elevador {
         }
     }
 
-    private void inicializarBotones(){
+    private void inicializarBotones(){ /*Creador de los botones internos del elevador */
         for(int i = 1; i<= totalPisos; i++){
             botones.add(new BotonAscensor("B" + i, i, this));
         }

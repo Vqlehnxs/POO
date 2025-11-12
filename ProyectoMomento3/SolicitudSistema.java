@@ -1,16 +1,16 @@
 public class SolicitudSistema {
     
     private int numeroPiso;
-    private Direcciones direccion;
-    private TiposSolicitud tipo;
+    private Direcciones direccion; /*Necesita procesar en que direccion se solicita el elevador */
+    private TiposSolicitud tipo; /* Procesa que tipo de boton es el que esta mandando la solicitud, si es el del pasillo o del elevador */
 
-    public SolicitudSistema(int numeroPiso, Direcciones direccion, TiposSolicitud tipo){
+    public SolicitudSistema(int numeroPiso, Direcciones direccion, TiposSolicitud tipo){ /* Metodo constructor */
         this.numeroPiso = numeroPiso;
         this.direccion = direccion;
         this.tipo = tipo;
     }
-
-    public int getNumeroPiso(){
+    /*Aca estan los gets */
+    public int getNumeroPiso(){ 
         return numeroPiso;
     }
 

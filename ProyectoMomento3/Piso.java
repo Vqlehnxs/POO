@@ -4,13 +4,13 @@ public class Piso {
     private BotonPasillo botonBajar;
     private InterfazElevador controlador;
     
-    public Piso(int numeroPiso, int totalPisos, InterfazElevador controlador){
+    public Piso(int numeroPiso, int totalPisos, InterfazElevador controlador){ /* Metodo constructor */
         this.numeroPiso = numeroPiso;
         this.controlador = controlador;
         inicializarBotones(totalPisos);
     }
 
-    private void inicializarBotones(int totalPisos){
+    private void inicializarBotones(int totalPisos){ /*metodo que inicializa los botones, es decir, resuelve si sube o baja */
         if(numeroPiso < totalPisos){
             this.botonSubir = new BotonPasillo("SUBIR - " + numeroPiso, numeroPiso, Direcciones.SUBIENDO, controlador);
         }
